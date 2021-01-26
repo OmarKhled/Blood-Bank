@@ -1,0 +1,112 @@
+
+/*Coloe Ballet*/
+/*
+#fcfcfc
+#0fc9e7
+#3186b2
+#4756ca
+#39b54a
+*/
+
+/* Resst */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Gneral styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fcfcfc;
+}
+html,body {
+  height: 100%
+}
+h1, h2, h3 {
+  padding-bottom: 1.2rem;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+/* Utilities */
+.container{
+  margin: auto;
+ max-width:69.375rem;
+}
+/* Navbar */
+#navbar {
+  background: #fff;
+  color:#fff;
+  overflow: auto;
+  line-height: 1.5rem;
+  border-bottom: 3px solid #f4f4f4;
+}
+#navbar a {
+  text-decoration: none;
+  color: #4F4F4F;
+}
+#navbar h1 {
+  float: left;
+  padding-top: 1.2rem;
+  padding-left:0.5rem;
+}
+#navbar h1 a {
+    color: #0fc9e7;
+}
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a{
+  color: #2196f3;
+  display: block;
+  padding: 1.2rem;
+  text-align: center;
+}
+#navbar ul li a:hover ,ul li a.selected {
+  background: #f4f4f4;
+  color: #0fc9e7;
+}
+/* Showcase */
+.top-container{
+  display: flex;
+  text-align: center;
+  background: no-repeat url("../images/main-bg.jpg") center ;
+  background-size: cover;
+  height:70%;
+  width: 100%;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+.holder {
+  color: #fff;
+  font-size: 1.3em;
+}
+.holder h1{
+  font-size: 5rem;
+}
+.primary-text {
+  color: red;
+}
+.btn {
+  background:#4756ca;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+/*Content*/
+.content{
+  min-height: 16.8%;
+}
+/*footer*/
+footer {
+  text-align: center;
+  color: #fff;
+  background: #3186b2;
+  padding: 20px;
+}
