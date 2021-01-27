@@ -16,7 +16,7 @@
 }
 /* Gneral styling */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Almarai', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #fcfcfc;
 }
 html,body {
@@ -63,13 +63,25 @@ a {
 }
 #navbar ul li a{
   color: #2196f3;
-  display: block;
+  display: inline-block;
+  width: fit-content;
   padding: 1.2rem;
   text-align: center;
 }
 #navbar ul li a:hover ,ul li a.selected {
   background: #f4f4f4;
   color: #0fc9e7;
+}
+#navbar ul li a img{
+  display: inline-block;
+  width: 47.888%;
+}
+.language {
+  width: 93.52px;
+  height: 62.38px;
+}
+.arabic {
+  margin-bottom: 1rem;
 }
 /* Showcase */
 .top-container{

@@ -1,5 +1,4 @@
 <?php
-
   /*if(isset($_POST['search'])) {
     $country = $_POST['country'];
     $city = $_POST['city'];
@@ -23,17 +22,7 @@
         $message = "Please fill the empty fields";
         header("Location: ../search.php?error&message=$message");
       } else {
-        echo 'here';
-        /*$dbServername = "localhost";
-        $dbUsername = "root";
-        $dbPassword = "159357";
-        $dbName = 'BloodBank';
-
-        $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
-        $sql = "INSERT INTO donators (name, email, phone_number, country, city, age, blood_type)
-        VALUES ('$name', '$email', '$tel', '$country', '$city', '$age', '$blood_type');";
-        mysqli_query($conn, $sql);*/
         $success = "The process was done succesfully";
-        header("Location: ../results.php?Succesful&success=$success&country=$country&city=$city&blood_type=$blood_type");
+        header('Location: ../results.php?Succesful&success=$success&country=$country&city=$city&blood_type='.urlencode($blood_type));
       }
   }

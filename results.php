@@ -46,9 +46,43 @@
           </datalist>
           <input type="submit" name="search" value="Search" class="btn-rounded">
         </form>
+
       </div>
       <div class="results">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <?php
+          /*Getting search rules*/
+            $country = $_GET['country'];
+            $city = $_GET['city'];
+            $blood_type = $_GET['blood_type'];
+            echo $blood_type;
+          /*Estblishing connection*/
+            $dbServername = "localhost";
+            $dbUsername = "root";
+            $dbPassword = "159357";
+            $dbName = 'BloodBank';
+            $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
+          /*Sql Code*/
+            $sql = "SELECT * FROM donators WHERE country = '$country' AND city = '$city' AND blood_type = 'O+';";
+          /*Pushing th sql code and checking the results*/
+            $results = mysqli_query($conn, $sql);
+            $results_check = mysqli_num_rows($results);
+            // echo "بخ";
+          /*Displaying the results*/
+            if ($results_check > 0) {
+                while($row = mysqli_fetch_assoc($results)) {
+                  /*echo  "<div>
+                    <h2>".$row['name']."</h2>
+                    <p>
+                    Phone number: ".$row['phone_number']." <br>
+                    City: ".$row['city']." <br>
+                    Age: ".$row['age']." <br>
+                    Blood_type: ".$row['blood_type']." <br>
+                    </p>
+                 </div>";*/
+                }
+
+            }
+          ?>
       </div>
     </div>
 
