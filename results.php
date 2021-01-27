@@ -62,7 +62,7 @@
             $dbName = 'BloodBank';
             $conn = mysqli_connect($dbServername, $dbUsername, $dbPassword, $dbName);
           /*Sql Code*/
-            $sql = "SELECT * FROM donators WHERE country = '$country' AND city = '$city' AND blood_type = 'O+';";
+            $sql = "SELECT * FROM donators WHERE country = '$country' AND city = '$city' AND blood_type = '$blood_type';";
           /*Pushing th sql code and checking the results*/
             $results = mysqli_query($conn, $sql);
             $results_check = mysqli_num_rows($results);
