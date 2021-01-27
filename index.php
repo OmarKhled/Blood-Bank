@@ -12,10 +12,14 @@
   <div class="top-container">
     <div class="holder">
       <h1>Give <span class="primary-text">Blood</span></h1>
-      <a href="register.php" class="btn"><strong>Register</strong></a>
+      <div class="buttons">
+        <a href="register.php" class="btn"><strong>Register as a donator</strong></a>
+        <a href="search.php" class="btn"><strong>Search for a donator</strong></a>
+      </div>
+
     </div>
   </div>
   <div class="content">
-
+    <?php include 'content.php' ?>
   </div>
 <?php include 'assets/footer.php' ?>

@@ -23,6 +23,6 @@
         header("Location: ../search.php?error&message=$message");
       } else {
         $success = "The process was done succesfully";
-        header('Location: ../results.php?Succesful&success=$success&country=$country&city=$city&blood_type='.urlencode($blood_type));
+        header("Location: ../results.php?Succesful&success=$success&country=$country&city=$city&blood_type=".urlencode($blood_type));
       }
   }

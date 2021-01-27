@@ -51,10 +51,10 @@
       <div class="results">
           <?php
           /*Getting search rules*/
-            $country = $_GET['country'];
-            $city = $_GET['city'];
+            $country = 'Egypt';
+            $city = "Cairo";
             $blood_type = $_GET['blood_type'];
-            echo $blood_type;
+
           /*Estblishing connection*/
             $dbServername = "localhost";
             $dbUsername = "root";
@@ -66,11 +66,10 @@
           /*Pushing th sql code and checking the results*/
             $results = mysqli_query($conn, $sql);
             $results_check = mysqli_num_rows($results);
-            // echo "بخ";
           /*Displaying the results*/
             if ($results_check > 0) {
                 while($row = mysqli_fetch_assoc($results)) {
-                  /*echo  "<div>
+                  echo  "<div class='box-fit'>
                     <h2>".$row['name']."</h2>
                     <p>
                     Phone number: ".$row['phone_number']." <br>
@@ -78,7 +77,7 @@
                     Age: ".$row['age']." <br>
                     Blood_type: ".$row['blood_type']." <br>
                     </p>
-                 </div>";*/
+                 </div>";
                 }
 
             }
