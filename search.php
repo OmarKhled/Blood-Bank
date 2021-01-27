@@ -8,7 +8,13 @@
   <body>
     <div class="box">
       <h2>Search</h2>
-      <form class="form" action="backend/search.php" method="post">
+      <p class="error">
+        <?php
+          include 'backend/search-process.php';
+          echo $_GET['message']
+        ?>
+      </p>
+      <form class="form" action="backend/search-process.php" method="post">
         <label>Country:</label><br>
         <input list="country" type="list" name="country" placeholder="Choose country"><br>
         <datalist id='country'>

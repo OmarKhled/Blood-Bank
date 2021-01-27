@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <?php include 'assets/navbar.php' ?>
+  <?php include 'assets/navbar.php'; ?>
   <div class="top-container">
     <div class="holder">
       <h1>Give <span class="primary-text">Blood</span></h1>
