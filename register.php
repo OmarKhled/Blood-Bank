@@ -8,7 +8,7 @@
   <body>
 
     <div class="box">
-      <h2>Register now!</h2>
+      <h2 class="register">Register now!</h2>
       <p class="error">
         <?php
         include 'backend/registration.php';

@@ -30,6 +30,14 @@ a {
   text-decoration: none;
   color: #fff;
 }
+/*Media quiries*/
+@media only screen and (max-device-width:500px) {
+  #navbar ul li a{
+font-size: 2rem;}
+strong{font-size: 2rem;}
+#navbar{padding: 2rem 2rem;}
+.holder a{padding: 3rem 2rem 2rem 2rem ; }
+}
 /* Utilities */
 .container{
   margin: auto;

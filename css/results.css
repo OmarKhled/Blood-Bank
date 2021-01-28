@@ -12,6 +12,7 @@ body {
 html,body {
   height: 100%
 }
+
 /* Navbar */
 #navbar {
   background: #fff;
@@ -143,3 +144,12 @@ p {
   margin: 4.3em 1em 0 1em;
   width:100%;
 }
+/*Media quirires*/
+@media only screen and (max-device-width:600px){
+  .box{background-color: #fff; width: 30%;}
+  #navbar ul li a{
+    font-size: 2rem;}
+    strong{font-size: 2rem;}
+    #navbar{padding: 2rem 2rem;}
+    .holder a{padding: 3rem 2rem 2rem 2rem ; }
+  }

@@ -96,3 +96,41 @@ p {
 .success {
   color: green;
 }
+/*Media quiries*/
+@media only screen
+  and (max-device-width: 600px)  {
+    .box label{font-size: 25px; font-weight: bold;}
+    input[type=text],
+ input[type=email],
+  input[type=tel],
+   input[type=list],
+    input[type=number]{height: 60px; }
+     .box{width: 50%; line-height: 2rem; }
+             .btn{font-size: 2em;}
+             .btn-rounded{font-size: 2em;}
+   }
+   @media (max-device-width: 1250px)  {
+       .box label{font-size: 25px; font-weight: bold;}
+       input[type=text],
+    input[type=email],
+     input[type=tel],
+      input[type=list],
+       input[type=number]{height: 60px; }
+        .box{width: 30%; line-height: 2rem; }
+        .btn{font-size: 2em;}
+        .btn-rounded{font-size: 2em;}
+      }
+
+   @media only screen
+  and (max-device-width: 450px)  {
+    ::placeholder{font-size: 20px; font-weight: bold;}
+    .box label{font-size: 30px; font-weight: bold;}
+    input[type=text],
+ input[type=email],
+  input[type=tel],
+   input[type=list],
+    input[type=number]{height: 80px; }
+     .box{width: 50%; line-height: 2rem; }
+             .btn{font-size: 2em;}
+             .btn-rounded{font-size: 2em;}
+   }
