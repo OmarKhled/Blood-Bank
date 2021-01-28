@@ -5,6 +5,8 @@
     <title>Your search results for <?php include 'backend/search-process.php';
                                          echo $_GET['blood_type']."Blood type";?></title>
     <link rel="stylesheet" href="css/results.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap" rel="stylesheet">
 
   </head>
   <body>
