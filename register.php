@@ -29,22 +29,33 @@
           <label>Phone number:</label><br>
           <input type="tel" name="phone_number" placeholder="Enter your phone number"><br>
           <label>Country:</label><br>
-          <input list="country" type="list" name="country" placeholder="Choose your country"><br>
+          <!-- <input list="country" type="list" name="country" placeholder="Choose your country"><br>
           <datalist id='country'>
             <option value="Egypt"></option>
-          </datalist>
+          </datalist> -->
+          <select placeholder="Choose your country" name="country">
+            <option value="" disabled selected>Select your country</option>
+            <option value="Egypt">Egypt</option>
+          </select>
           <label>City</label><br>
-          <input list="cities" type="list" name="city" placeholder="Choose your city"><br>
+          <!-- <input list="cities" type="list" name="city" placeholder="Choose your city"><br>
           <datalist id='cities'>
             <option value="Cairo"></option>
             <option value="Alexandria"></option>
             <option value="El-faioum"></option>
             <option value="Assiut"></option>
-          </datalist>
+          </datalist> -->
+          <select name="city">
+            <option value="" disabled selected>Select your city</option>
+            <option value="Cairo">Cairo</option>
+            <option value="Alexandria">Alexandria</option>
+            <option value="El-faioum">El-faioum</option>
+            <option value="Assiut">Assiut</option>
+          </select>
           <label>Age:</label><br>
           <input type="number" name="age" placeholder="Enter you age" min="16"><br>
           <label>Blood Type</label><br>
-          <input list="Blood" type="list" name="blood-types" placeholder="Choose your Blood type"><br>
+          <!-- <input list="Blood" type="list" name="blood-types" placeholder="Choose your Blood type"><br>
           <datalist id='Blood'>
             <option value="A+"></option>
             <option value="A-"></option>
@@ -54,9 +65,20 @@
             <option value="O-"></option>
             <option value="AB+"></option>
             <option value="AB-"></option>
-          </datalist>
+          </datalist> -->
+          <select name="blood-types">
+            <option value="" disabled selected>Select your blood type</option>
+            <option value="A+">A+</option>
+            <option value="A-">A-</option>
+            <option value="B+">B+</option>
+            <option value="B-">B-</option>
+            <option value="O+">O+</option>
+            <option value="O-">O-</option>
+            <option value="AB+">AB+</option>
+            <option value="AB-">AB-</option>
+          </select>
 
-          <p> <input type="checkbox" name="agreement"> I am over 16 and I have read and agree to the <a href="">Terms&Conditions</a> and the <a href="#">Privacy Policy</a> </p>
+          <p> <input type="checkbox" name="agreement" required> I am over 16 and I have read and agree to the <a href="">Terms&Conditions</a> and the <a href="#">Privacy Policy</a> </p>
           <input type="submit" name="submit" value="Register" class="btn">
       </form>
     </div>
