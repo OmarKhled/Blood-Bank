@@ -109,6 +109,7 @@
 .drop-menu {
   display: none;
   position: absolute;
+  line-height: 1.5em;
   background: #fff;
   padding:4px;
 }

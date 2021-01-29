@@ -99,6 +99,19 @@ p {
   width:100%;
   text-align: center;
 }
+/*Donator inf*/
+.user-inf {
+  margin: 6.125rem 6.5rem;
+  display: flex;
+}
+.user-img {
+  width:20rem;
+  padding: 0 20px;
+}
+.user-txt {
+  font-size: 1.5rem;
+  padding-top: 1.2rem;
+}
 /*Media quirires*/
 @media only screen and (max-device-width:600px){
   .box{background-color: #fff; width: 30%;}
@@ -107,5 +120,5 @@ p {
     strong{font-size: 2rem;}
     #navbar{padding: 2rem 2rem;}
     .holder a{padding: 3rem 2rem 2rem 2rem ; }
-  }
+}
   </style>

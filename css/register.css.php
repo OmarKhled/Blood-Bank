@@ -16,6 +16,36 @@
   padding: 0;
   box-sizing: border-box;
 }
+/*Medi quiries*/
+@media only screen and (min-device-width: 450px)  {
+ input[type=text],
+ input[type=email],
+ input[type=tel],
+ input[type=list],
+ input[type=number], select{
+  height: 35px;
+}
+}
+@media only screen and (max-device-width: 450px)  {
+    ::placeholder{font-size: 20px; font-weight: bold;}
+    .box label{font-size: 30px; font-weight: bold;}
+    input[type=text],
+    input[type=email],
+    input[type=tel],
+    input[type=list],
+    input[type=number], select{
+      height: 80px;
+    }
+    .box{
+       width: 50%; line-height: 2rem;
+     }
+    .btn{
+      font-size: 2em;
+    }
+    btn-rounded{
+      font-size: 2em;
+    }
+   }
 /* Gneral styling */
 body {
   font-family: 'Almarai', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -62,7 +92,6 @@ input[type=text],
     input[type=number], select{
   display:block;
   width:100%;
-  height: 35px;
   font-size: 16px;
   padding: 5px;
   margin-bottom: 18px;
