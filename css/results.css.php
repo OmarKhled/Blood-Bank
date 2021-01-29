@@ -15,58 +15,10 @@ html,body {
   height: 100%
 }
 
+/*Media quiries*/
 /* Navbar */
-#navbar {
-  background: #fff;
-  color:#fff;
-  overflow: auto;
-  line-height: 1.5rem;
-  border-bottom: 3px solid #f4f4f4;
-}
-#navbar a {
-  text-decoration: none;
-  color: #4F4F4F;
-}
-#navbar h1 {
-  float: left;
-  padding-top: 1.2rem;
-  padding-left:0.5rem;
-}
-#navbar h1 a {
-    color: #0fc9e7;
-}
-#navbar ul {
-  list-style: none;
-  float: right;
-}
-#navbar ul li {
-  float: left;
-}
-#navbar ul li a{
-  color: #2196f3;
-  display: block;
-  padding: 1.2rem;
-  text-align: center;
-}
-#navbar ul li a:hover ,ul li a.selected {
-  background: #f4f4f4;
-  color: #0fc9e7;
-}
-.container{
-  margin: auto;
- max-width:69.375rem;
-}
-#navbar ul li a img{
-  display: inline-block;
-  width: 47.888%;
-}
-.language {
-  width: 93.52px;
-  height: 62.38px;
-}
-.arabic {
-  margin-bottom: 1rem;
-}
+<?php include 'navbar.css.php' ?>
+
 /* The search box */
 h2 {
   color: #4f4f4f;

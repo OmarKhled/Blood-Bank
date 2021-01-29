@@ -13,7 +13,6 @@
 
   }*/
   if (isset($_POST['search'])) {
-    echo 'hi';
     $country = $_POST['country'];
     $city = $_POST['city'];
     $blood_type = $_POST['blood-types'];
