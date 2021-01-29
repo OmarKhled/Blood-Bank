@@ -97,7 +97,7 @@ label {
   background: #fff;
   width: 85%;
   border-radius: 80px 0 80px 0;
-  text-align: <?php echo $_SESSION['alignment'] ?>;
+  text-align: left;
   font-size: 16px;
 }
 a {
