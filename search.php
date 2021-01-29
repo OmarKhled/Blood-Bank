@@ -1,15 +1,19 @@
+<?php
+ include "config.php";
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Search</title>
-    <link rel="stylesheet" href="css/register.css">
+    <?php include 'css/register.css.php' ?>
     <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="box">
-      <h2>Search</h2>
+      <h2><?php echo $lang['Search'] ?></h2>
       <p class="error">
         <?php
           include 'backend/search-process.php';
@@ -17,32 +21,32 @@
         ?>
       </p>
       <form class="form" action="backend/search-process.php" method="post">
-        <label>Country:</label><br>
-        <input list="country" type="list" name="country" placeholder="Choose country"><br>
-        <datalist id='country'>
-          <option value="Egypt"></option>
-        </datalist>
-<label>City</label><br>
-        <input list="cities" type="list" name="city" placeholder="Choose city"><br>
-        <datalist id='cities'>
-          <option value="Cairo"></option>
-          <option value="Alexandria"></option>
-          <option value="El-faioum"></option>
-          <option value="Assiut"></option>
-        </datalist>
-<label>Blood Type</label><br>
-        <input list="Blood" type="list" name="blood-types" placeholder="Choose Blood type"><br>
-        <datalist id='Blood'>
-          <option value="A+"></option>
-          <option value="A-"></option>
-          <option value="B+"></option>
-          <option value="B-"></option>
-          <option value="O+"></option>
-          <option value="O-"></option>
-          <option value="AB+"></option>
-          <option value="AB-"></option>
-        </datalist>
-        <input type="submit" name="search" value="Search" class="btn-rounded">
+        <label> <?php echo $lang['Country:'] ?></label><br>
+        <select name="country">
+          <option value="" disabled selected><?php echo $lang['Choose your country'] ?></option>
+          <option value="Egypt"><?php echo $lang['Egypt'] ?></option>
+        </select>
+        <label><?php echo $lang['City'] ?></label><br>
+        <select name="city">
+          <option value="" disabled selected><?php echo $lang['Choose your city'] ?></option>
+          <option value="Cairo"><?php echo $lang['Cairo'] ?></option>
+          <option value="Alexandria"><?php echo $lang['Alexandria'] ?></option>
+          <option value="El-faioum"><?php echo $lang['El-faioum'] ?></option>
+          <option value="Assiut"><?php echo $lang['Assiut'] ?></option>
+        </select>
+        <label><?php echo $lang['Blood Type'] ?></label><br>
+        <select name="blood-types">
+          <option value="" disabled selected><?php echo $lang['Choose your Blood type'] ?></option>
+          <option value="A+">A+</option>
+          <option value="A-">A-</option>
+          <option value="B+">B+</option>
+          <option value="B-">B-</option>
+          <option value="O+">O+</option>
+          <option value="O-">O-</option>
+          <option value="AB+">AB+</option>
+          <option value="AB-">AB-</option>
+        </select>
+        <input type="submit" name="search" value="<?php echo $lang['Search'] ?>" class="btn-rounded">
       </form>
     </div>
   </body>

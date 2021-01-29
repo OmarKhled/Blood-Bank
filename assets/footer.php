@@ -1,5 +1,5 @@
 <footer>
-  <p>The Blood Bank @2020, All Rights Reserved</p>
+  <p><?php echo $lang['footer_agreement'] ?></p>
 </footer>
 </body>
 

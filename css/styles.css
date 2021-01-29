@@ -36,7 +36,7 @@ a {
 font-size: 2rem;}
 strong{font-size: 2rem;}
 #navbar{padding: 2rem 2rem;}
-.holder a{padding: 3rem 2rem 2rem 2rem ; line-height: 5em;}
+.holder a{padding: 2rem 2rem 2rem 2rem ; line-height: 5em;}
 }
 /* Utilities */
 .container{
@@ -114,6 +114,10 @@ strong{font-size: 2rem;}
 }
 .primary-text {
   color: red;
+}
+
+.invisible {
+  visibility:hidden;
 }
 .btn {
   background:#4756ca;

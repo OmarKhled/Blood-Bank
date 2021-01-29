@@ -6,17 +6,18 @@
   <title>Blood Bank</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <?php include 'assets/navbar.php'; ?>
   <div class="top-container">
     <div class="holder">
-      <h1>Give <span class="primary-text">Blood</span></h1>
+      <h1><?php echo $lang['Give'] ?> <span class="primary-text"><?php echo $lang['Blood'] ?></span></h1>
       <div class="buttons">
-        <a href="register.php" class="btn"><strong>Register as a donator</strong></a>
-        <a href="search.php" class="btn"><strong>Search for a donator</strong></a>
+        <a href="register.php" class="btn"><strong><?php echo $lang['Register as a donator'] ?></strong></a>
+        <span class="invisible">E</span>
+        <a href="search.php" class="btn"><strong><?php echo $lang['Search for a donator'] ?></strong></a>
       </div>
 
     </div>
