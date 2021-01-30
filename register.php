@@ -8,6 +8,8 @@
     <meta charset="utf-8">
     <title>Register</title>
     <?php include 'css/register.css.php' ?>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap" rel="stylesheet">
   </head>
   <body>
 
@@ -33,22 +35,13 @@
           <label><?php echo $lang['Phone number:'] ?></label><br>
           <input type="tel" name="phone_number" placeholder="<?php echo $lang['Enter your phone number'] ?>"><br>
           <label><?php echo $lang['Country:'] ?></label><br>
-          <!-- <input list="country" type="list" name="country" placeholder=""><br>
-          <datalist id='country'>
-            <option value=></option>
-          </datalist> -->
+
           <select name="country">
             <option value="" disabled selected><?php echo $lang['Choose your country'] ?></option>
             <option value="Egypt"><?php echo $lang['Egypt'] ?></option>
           </select>
           <label><?php echo $lang['City'] ?></label><br>
-          <!-- <input list="cities" type="list" name="city" placeholder="<?php //echo $lang['Choose your city'] ?>"><br>
-          <datalist id='cities'>
-            <option value=<?php //echo $lang['Cairo'] ?>></option>
-            <option value=<?php //echo $lang['Alexandria'] ?>></option>
-            <option value=<?php //echo $lang['El-faioum'] ?>></option>
-            <option value=<?php //echo $lang['Assiut'] ?>></option>
-          </datalist> -->
+
           <select name="city">
             <option value="" disabled selected><?php echo $lang['Choose your city'] ?></option>
             <option value="Cairo"><?php echo $lang['Cairo'] ?></option>
@@ -59,17 +52,7 @@
           <label><?php echo $lang['Age:'] ?></label><br>
           <input type="number" name="age" placeholder="<?php echo $lang['Enter you age'] ?>" min="16"><br>
           <label><?php echo $lang['Blood Type'] ?></label><br>
-          <!-- <input list="Blood" type="list" name="blood-types" placeholder="<?php echo $lang['Choose your Blood type'] ?>"><br>
-          <datalist id='Blood'>
-            <option value="A+"></option>
-            <option value="A-"></option>
-            <option value="B+"></option>
-            <option value="B-"></option>
-            <option value="O+"></option>
-            <option value="O-"></option>
-            <option value="AB+"></option>
-            <option value="AB-"></option>
-          </datalist> -->
+
           <select name="blood-types">
             <option value="" disabled selected><?php echo $lang['Choose your Blood type'] ?></option>
             <option value="A+">A+</option>
@@ -82,7 +65,7 @@
             <option value="AB-">AB-</option>
           </select>
 
-          <p> <input type="checkbox" name="agreement"> <?php echo $lang['I am over 16 and I have read and agree to the'] ?> <a href=""><?php echo $lang['Terms & Conditions'] ?></a> <?php echo $lang['and the'] ?>
+          <p> <input type="checkbox" name="agreement" required> <?php echo $lang['I am over 16 and I have read and agree to the'] ?> <a href=""><?php echo $lang['Terms & Conditions'] ?></a> <?php echo $lang['and the'] ?>
             <a href="#"><?php echo $lang['Privacy Policy'] ?></a> </p>
           <input type="submit" name="submit" value="<?php echo $lang['Register'] ?>" class="btn">
       </form>

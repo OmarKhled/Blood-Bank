@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>Blood Bank</title>
-  <?php include_once 'css/styles.css.php' ?>
-  
+  <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>

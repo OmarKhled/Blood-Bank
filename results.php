@@ -11,12 +11,15 @@
     <title>Your search results for <?php include 'backend/search-process.php';
                                          echo $_GET['blood_type']."Blood type";?></title>
     <?php include 'css/results.css.php' ?>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400&display=swap" rel="stylesheet">
+
   </head>
   <body>
     <?php include_once 'assets/navbar.php'; ?>
     <div class="content">
-      <!--<div class="box-container">
-        <div class="box-again">
+      <div class="box-container">
+        <!-- <div class="box-again">
           <h2><?php echo $lang['New Search?'] ?></h2>
           <p class="error">
             <?php
@@ -53,8 +56,8 @@
             <input type="submit" name="search" value="Search" class="btn-rounded">
           </form>
 
-        </div>
-      </div>-->
+        </div> -->
+      </div>
 
       <div class="results">
         <?php include 'backend/results-spread-process.php'; ?>

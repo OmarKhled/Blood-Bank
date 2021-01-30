@@ -18,7 +18,7 @@
 /*Displaying the results*/
   if ($results_check > 0) {
       while($row = mysqli_fetch_assoc($results)) {
-        echo  "<a href='results-persons.php?person=".$row['id']."'><div class='results-box'>
+        echo  "<a href= 'results-person.php?person=".$row['id']."'><div class='results-box'>
           <h2>".$row['name']."</h2>
           <p>
           Phone number: ".$row['phone_number']."  <br>

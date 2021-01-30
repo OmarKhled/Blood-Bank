@@ -1,4 +1,3 @@
-
 /*Coloe Ballet*/
 /*
 #fcfcfc
@@ -25,6 +24,7 @@ html,body {
 h1, h2, h3 {
   padding-bottom: 1.2rem;
 }
+
 a {
   text-decoration: none;
   color: #fff;
@@ -36,20 +36,26 @@ a {
   }
 }
 @media only screen and (max-device-width:500px) {
-  h1 strong{font-size: 2.3rem;}
-  #navbar{line-height: 1.8rem; }
-
-  .navigation {display: none;}
-  .m-navigation {
-    display: block;
-    font-size: 2em;
+  #navbar ul li a{
+  font-size: 1.5rem;}
+  strong{
+    font-size: 2rem;
+  }
+  #navbar{
+    padding: 2rem 2rem;
   }
   .holder a{
-    font-size: 1.8rem;
-    padding: 1.3rem 1.3rem 1.3rem 1.3rem ;
-    line-height: 4em;
+    padding: 2rem 2rem 2rem 2rem ; line-height: 5em;
   }
-
+  .navigation {
+    display: none
+  }
+  .m-navigation {
+    display: block;
+  }
+  footer {
+    font-size: 0.6em;
+  }
 }
 /* Utilities */
 .container{
@@ -58,21 +64,47 @@ a {
 }
 /* Navbar */
 #navbar {
+  background: #fff;
+  color:#fff;
+  overflow: auto;
   line-height: 1.5rem;
+
 }
-#navbar  a{
+#navbar a {
   text-decoration: none;
-  color: #2196f3;;
+  color: #4F4F4F;
+}
+#navbar h1 {
+  float: left;
+  padding: 1.2rem;
 }
 #navbar h1 a {
     color: #0fc9e7;
 }
-#navbar h1 {
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+#navbar ul li {
   float: left;
 }
-#navbar ul {
-  float: right;
-  list-style: none;
+#navbar ul li a{
+  color: #2196f3;
+  display: inline-block;
+  width: fit-content;
+  padding: 1.2rem;
+  text-align: center;
+}
+#navbar ul li a:hover ,ul li a.selected {
+  background: #f4f4f4;
+  color: #0fc9e7;
+}
+#navbar ul li a img{
+  display: inline-block;
+
+}
+.flex {
+  display: flex;
 }
 .floated {
   float: left;
@@ -95,9 +127,11 @@ a {
   display: inline-block;
   width: 47.888%;
 }
+
 .m-navigation a{
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding: 1.2rem 0.8rem;
+  line-height: 1rem;
   display: block;
   width: 100%;
   text-align: center;
@@ -109,6 +143,7 @@ a {
 .drop-menu {
   display: none;
   position: absolute;
+  line-height: 1.5em;
   background: #fff;
   padding:4px;
 }
@@ -122,6 +157,7 @@ a {
   width: 93.52px;
   height: 62.38px;
 }
+
 /* Showcase */
 .top-container{
   display: flex;
