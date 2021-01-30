@@ -1,4 +1,4 @@
-<div class="profile">
+<!--<div class="profile">
       <img src="images/bloodbank.png" alt="profile-picture" class="profile-picture">
       <h2>Hello.</h2>
       <p>Lorem ipsum dolor sit amet, vitae volutpat, dui conubia, dolor urna. Non auctor, montes nulla distinctio.</p>
@@ -18,10 +18,29 @@
         <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
       </div>
     </div>
-    <hr>
+    <hr>-->
+
+
+    <div class="about">
+      <div class="txt">
+        <h2 class="lan"><?php echo $lang['mission']; ?></h2>
+        <p class="lan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <img src="images/our-mision.jpg" alt="blood-transfer" class='bld'>
+    </div>
+    <div class="about-2">
+      <img src="images/donation-spare.jpg" alt="blood-donation" class="bld">
+      <div class="txt">
+        <h2 class="lan"><?php echo $lang['about']; ?></h2>
+        <p class="lan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+    </div>
+
     <div class="contact-me">
-      <h2>Get In Touch</h2>
+       <hr />
+      <h2><?php echo $lang['reach_out']; ?></h2>
       <h3>Lorem ipsum dolor sit amet, non elit.</h3>
       <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <button class="btn-1"><a href="mailto:o.abuelfetohahmed@nu.edu.eg">CONTACT US</a></button>
+      <button class="btn-1"><a href="mailto:o.abuelfetohahmed@nu.edu.eg"><?php echo $lang['call']; ?></a></button>
     </div>

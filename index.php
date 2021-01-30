@@ -4,12 +4,11 @@
 <head>
   <meta charset="utf-8">
   <title>Blood Bank</title>
-  <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
 <body>
   <?php include 'assets/navbar.php'; ?>
+  <?php include 'css/styles.css.php' ?>
   <div class="top-container">
     <div class="holder">
       <h1><?php echo $lang['Give'] ?> <span class="primary-text"><?php echo $lang['Blood'] ?></span></h1>

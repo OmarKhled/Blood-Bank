@@ -39,7 +39,12 @@ $lang = array(
   "New Search?" => "New Search?",
   "arabic" => "arabic",
   "english" => "english",
-  "footer_agreement" => "The Blood Bank &copy;2020, All Rights Reserved",
+  "footer_agreement" => "The Blood Bank &copy;2021, All Rights Reserved",
+  "about" => "Who are We?",
+  "mission" => "Our Mission",
+  "reach_out" => "Get In Touch",
+  "call" => "CONTACT US"
+
 );
 
  ?>

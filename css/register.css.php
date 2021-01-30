@@ -109,10 +109,13 @@ p {
  input[type=email],
   input[type=tel],
    input[type=list],
-    input[type=number]{height: 60px; }
+    input[type=number], select{height: 60px; }
      .box{width: 50%; line-height: 2rem; }
              .btn{font-size: 2em;}
              .btn-rounded{font-size: 2em;}
+             .box p {
+               font-size: 1.4rem;
+             }
    }
    @media (max-device-width: 1250px)  {
        .box label{font-size: 25px; font-weight: bold;}
@@ -120,11 +123,15 @@ p {
     input[type=email],
      input[type=tel],
       input[type=list],
-       input[type=number]{height: 60px; }
+       input[type=number], select{height: 60px; }
         .box{width: 30%; line-height: 2rem; }
         .btn{font-size: 2em;}
         .btn-rounded{font-size: 2em;}
+        .box p {
+          font-size: 1.4rem;
+        }
       }
+
 
    @media only screen
   and (max-device-width: 450px)  {
@@ -134,10 +141,13 @@ p {
  input[type=email],
   input[type=tel],
    input[type=list],
-    input[type=number]{height: 80px; }
+    input[type=number], select{height: 80px; }
      .box{width: 50%; line-height: 2rem; }
              .btn{font-size: 2em;}
              .btn-rounded{font-size: 2em;}
+   }
+   .box p {
+     font-size: 1.4rem;
    }
 
 </style>

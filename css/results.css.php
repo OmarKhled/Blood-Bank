@@ -25,7 +25,7 @@ html, body {
 }
 @media only screen and (max-device-width:500px) {
   #navbar ul li a{
-  font-size: 1.5rem;}
+  font-size: 1rem;}
   strong{
     font-size: 2rem;
   }
@@ -253,14 +253,14 @@ p {
 }
 
 /*Media quirires*/
-@media only screen and (max-device-width:600px) {
+@media only screen and (max-device-width:650px) {
   .box {
     background-color: #fff;
     width: 30%;
   }
 
   #navbar ul li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   strong {
@@ -274,6 +274,13 @@ p {
   .holder a {
     padding: 3rem 2rem 2rem 2rem;
   }
+  .results-box {
+    font-size: 1.7em;
+  }
+  .user-txt {
+    font-size: 1.8rem;
+  }
 }
+
 
 </style>
