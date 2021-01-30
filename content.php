@@ -22,11 +22,11 @@
 
 
     <div class="about">
+      <img src="images/our-mision.jpg" alt="blood-transfer" class='bld'>
       <div class="txt">
         <h2 class="lan"><?php echo $lang['mission']; ?></h2>
         <p class="lan">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
-      <img src="images/our-mision.jpg" alt="blood-transfer" class='bld'>
     </div>
     <div class="about-2">
       <img src="images/donation-spare.jpg" alt="blood-donation" class="bld">
@@ -36,6 +36,20 @@
       </div>
     </div>
     </div>
+
+    <div class="cards">
+            <div class="sec1">
+                <img src="images/tap.png" alt="easy">
+                <h3>easy to use</h3>
+            </div>
+              <div class="sec2"><img src="images/shield.png" alt="scure">
+              <h3>secure</h3>
+            </div>
+            <div class="sec3">
+                <img src="images/settings.png" alt="reliable">
+                <h3>reliable</h3>
+            </div>
+        </div>
 
     <div class="contact-me">
        <hr />

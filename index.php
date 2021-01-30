@@ -23,4 +23,8 @@
   <div class="content">
     <?php include 'content.php' ?>
   </div>
+
+ 
+ 
+
 <?php include 'assets/footer.php' ?>

@@ -31,9 +31,87 @@ a {
 }
 /*Media quiries*/
 @media only screen and (min-device-width:500px) {
+  .bld {
+  width: 40%;
+  height:20rem;
+  object-fit:cover;
+  box-shadow: 0px 0px 20px 0px #d4d4d4;
+  margin-left: 40px;
+  margin-right: 40px;
+  border-radius: 22px;
+}
+
+
+.cards{display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem;
+    flex-wrap: wrap;
+justify-content: space-around;}
+
+
+.sec1,.sec2,.sec3{
+  width:15rem; 
+    height: fit-content; 
+     background-color:white ;
+      text-align: center;
+      box-shadow: 0px 0px 20px 0px #d4d4d4;
+      border-radius:20px;
+
+      margin-top:2rem}
+
+.cards img{width:80%; margin: 4rem 0;}
+
+.txt .lan {
+  text-align: <?php if ($lang['mission'] == "Our Mission") {
+    echo 'left';
+  } else  {
+    echo 'right';
+  } ?>;
+}
+
+.content{
+  min-height: 16.8%;
+  padding: 120px 0px 50px 0px;
+  text-align: center;
+}
   .m-navigation {
     display: none;
   }
+  .about {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: <?php
+    if ($lang['mission'] == "Our Mission") {
+      echo 'row-reverse';
+    } else  {
+      echo 'row';
+    }
+  ?>;
+  color:#4f4f4f;
+  margin-bottom: 200px;
+}
+
+.content{
+  min-height: 16.8%;
+  padding: 120px 0px 50px 0px;
+  text-align: center;
+}
+.about-2 {
+  margin: auto;
+  width: 70%;
+  display: flex;
+  flex-direction: <?php
+    if ($lang['mission'] == "Our Mission") {
+      echo 'row';
+    } else  {
+      echo 'row-reverse';
+    }
+  ?>;
+  color:#4f4f4f;
+  margin-bottom: 100px;
+}
 }
 @media only screen and (max-device-width:500px) {
   #navbar ul li a{
@@ -53,9 +131,54 @@ a {
   .m-navigation {
     display: block;
   }
+
+  .cards{display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top:-10rem;
+    padding: 2rem;
+    flex-wrap: wrap;
+justify-content: space-around;}
+
+
+.sec1,.sec2,.sec3{ 
+    height: fit-content; 
+     background-color:white ;
+     display:flex;
+     align-items:center;
+     justify-content:space-around;
+      text-align: center;
+      box-shadow: 0px 0px 20px 0px #d4d4d4;
+      border-radius:20px;
+
+      margin-top:2rem}
+
+.cards img{width:10rem; margin: 4rem 0;}
+
+  .lan{text-align:center; line-height:4rem; color:#2b2b2b; font-family:Arial, Helvetica, sans-serif;}
+   
+  .content{
+  min-height: 16.8%;
+  padding: 4rem;
+  text-align: center;
+}
+
   footer {
     font-size: 0.6em;
   }
+ 
+  .about,.about-2{ margin-bottom:15rem} 
+  
+  .bld {
+  width: 70%;
+  box-shadow: 0px 0px 20px 0px #d4d4d4;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom:80px;
+  border-radius: 22px;
+}
+ 
+
 }
 /* Utilities */
 .container{
@@ -203,11 +326,7 @@ a {
   border: none;
 }
 /*Content*/
-.content{
-  min-height: 16.8%;
-  padding: 120px 0px 50px 0px;
-  text-align: center;
-}
+
 /*footer*/
 footer {
   text-align: center;
@@ -266,41 +385,15 @@ h2 {
     width: 30%;
     margin: 0 auto 100px auto;
 }*/
-.bld {
-  width: 40%;
-  box-shadow: 0px 0px 20px 0px #d4d4d4;
-  margin-left: 40px;
-  margin-right: 40px;
-  border-radius: 22px;
-}
-.about {
-  margin: auto;
-  width: 70%;
-  display: flex;
-  flex-direction: <?php
-    if ($lang['mission'] == "Our Mission") {
-      echo 'row';
-    } else  {
-      echo 'row-reverse';
-    }
-  ?>;
-  color:#4f4f4f;
-  margin-bottom: 200px;
-}
-.about-2 {
-  margin: auto;
-  width: 70%;
-  display: flex;
-  flex-direction: <?php
-    if ($lang['mission'] == "Our Mission") {
-      echo 'row';
-    } else  {
-      echo 'row-reverse';
-    }
-  ?>;
-  color:#4f4f4f;
-  margin-bottom: 100px;
-}
+
+
+
+
+/*change font*/
+
+h3{font-size: 2rem; color: rgb(167, 157, 157); font-family: Arial, Helvetica, sans-serif;   text-transform: capitalize; }
+
+
 .txt {
   padding-top: 35px;
   font-size: 1.3rem;
@@ -315,14 +408,9 @@ hr {
   display: inline-block;
   border-top: dotted lightgrey 5px;
   margin-bottom: 100px;
+  margin-top:100px
 }
-.txt .lan {
-  text-align: <?php if ($lang['mission'] == "Our Mission") {
-    echo 'left';
-  } else  {
-    echo 'right';
-  } ?>;
-}
+
 .contact-me {
   text-align: center;
   padding-bottom: 50px;
