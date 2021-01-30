@@ -13,9 +13,9 @@
     <div class="holder">
       <h1><?php echo $lang['Give'] ?> <span class="primary-text"><?php echo $lang['Blood'] ?></span></h1>
       <div class="buttons">
-        <a href="register.php" class="btn"><strong><?php echo $lang['Register as a donator'] ?></strong></a>
+        <a href="register.php" class="btn hover"><?php echo $lang['Register as a donator'] ?></a>
         <span class="invisible">E</span>
-        <a href="search.php" class="btn"><strong><?php echo $lang['Search for a donator'] ?></strong></a>
+        <a href="search.php" class="btn hover"><?php echo $lang['Search for a donator'] ?></a>
       </div>
 
     </div>
@@ -23,8 +23,9 @@
   <div class="content">
     <?php include 'content.php' ?>
   </div>
+  <?php include 'assets/footer.php' ?>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 
- 
- 
-
-<?php include 'assets/footer.php' ?>
+</body>
+</html>

@@ -39,14 +39,14 @@
 
     <div class="cards">
             <div class="sec1">
-                <img src="images/tap.png" alt="easy">
+                <img src="images/tap.png"class="img-down" alt="easy">
                 <h3>easy to use</h3>
             </div>
-              <div class="sec2"><img src="images/shield.png" alt="scure">
+              <div class="sec2"><img src="images/shield.png"class="img-down" alt="scure">
               <h3>secure</h3>
             </div>
             <div class="sec3">
-                <img src="images/settings.png" alt="reliable">
+                <img src="images/settings.png"class="img-down" alt="reliable">
                 <h3>reliable</h3>
             </div>
         </div>
@@ -56,5 +56,5 @@
       <h2><?php echo $lang['reach_out']; ?></h2>
       <h3>Lorem ipsum dolor sit amet, non elit.</h3>
       <p>Lorem ipsum dolor sit amet, in quis, aenean amet. Phasellus sodales, tellus donec dui, ornare erat.</p>
-      <button class="btn-1"><a href="mailto:o.abuelfetohahmed@nu.edu.eg"><?php echo $lang['call']; ?></a></button>
+      <button class="btn hover"><a href="mailto:o.abuelfetohahmed@nu.edu.eg"><?php echo $lang['call']; ?></a></button>
     </div>
