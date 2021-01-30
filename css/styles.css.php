@@ -41,6 +41,19 @@ a {
   border-radius: 22px;
 }
 
+.btn {
+  background:#4756ca;
+  display: inline-block;
+  /* background: linear-gradient(90deg,#55e7fc,#4756ca); */
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: 700;
+}
+
 
 .cards{display: flex;
     width: 80%;
@@ -51,8 +64,8 @@ justify-content: space-around;}
 
 
 .sec1,.sec2,.sec3{
-  width:15rem; 
-    height: fit-content; 
+  width:15rem;
+    height: fit-content;
      background-color:white ;
       text-align: center;
       box-shadow: 0px 0px 20px 0px #d4d4d4;
@@ -114,16 +127,24 @@ justify-content: space-around;}
 }
 }
 @media only screen and (max-device-width:500px) {
-  #navbar ul li a{
-  font-size: 1.5rem;}
-  strong{
-    font-size: 2rem;
+  .btn{
+    background:#4756ca;
+    display: inline-block;
+    /* background: linear-gradient(90deg,#55e7fc,#4756ca); */
+    padding: 1.8rem 2.3rem;
+    font-size: 1.6rem;
+    cursor: pointer;
+    border-radius: 50px;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    font-weight: 700;
   }
   #navbar{
     padding: 2rem 2rem;
   }
   .holder a{
-    padding: 2rem 2rem 2rem 2rem ; line-height: 5em;
+    /* padding: 2rem 2rem 2rem 2rem ; line-height: 5em; */
   }
   .navigation {
     display: none
@@ -141,8 +162,8 @@ justify-content: space-around;}
 justify-content: space-around;}
 
 
-.sec1,.sec2,.sec3{ 
-    height: fit-content; 
+.sec1,.sec2,.sec3{
+    height: fit-content;
      background-color:white ;
      display:flex;
      align-items:center;
@@ -156,7 +177,7 @@ justify-content: space-around;}
 .cards img{width:10rem; margin: 4rem 0;}
 
   .lan{text-align:center; line-height:4rem; color:#2b2b2b; font-family:Arial, Helvetica, sans-serif;}
-   
+
   .content{
   min-height: 16.8%;
   padding: 4rem;
@@ -166,9 +187,9 @@ justify-content: space-around;}
   footer {
     font-size: 0.6em;
   }
- 
-  .about,.about-2{ margin-bottom:15rem} 
-  
+
+  .about,.about-2{ margin-bottom:15rem}
+
   .bld {
     position: relative;
     top: 350px;
@@ -322,22 +343,11 @@ justify-content: space-around;}
 .invisible {
   visibility:hidden;
 }
-.btn {
-  background:#4756ca;
-  display: inline-block;
-  /* background: linear-gradient(90deg,#55e7fc,#4756ca); */
-  padding: 15px 25px;
-  cursor: pointer;
-  border-radius: 50px;
-  border: none;
-  position: relative;
-  overflow: hidden;
-  font-weight: 700;
-}
+
 /* Hover Button Effect */
 .buttons {
   /* display: inline-block; */
- 
+
 }
 .bubble-button {
   position: absolute;
@@ -357,7 +367,7 @@ justify-content: space-around;}
   {
       width: 800px;
       height: 800px;
-      opacity: 0; 
+      opacity: 0;
   }
 }
 
