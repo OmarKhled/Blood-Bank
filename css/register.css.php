@@ -48,7 +48,7 @@ a {
 }
 .box label{
   display: block;
-  text-align: <?php echo $_SESSION['alignment'] ?>;
+  text-align: <?php echo $_COOKIE['alignment'] ?>;
   font-size: 18px;
   color: #333;
 }
