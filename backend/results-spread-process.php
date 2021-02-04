@@ -1,7 +1,7 @@
 <?php
 /*Getting search rules*/
-  $country = 'Egypt';
-  $city = "Cairo";
+  $country = $_GET['country'];
+  $city = $_GET['city'];
   $blood_type = $_GET['blood_type'];
 
 /*Estblishing connection*/

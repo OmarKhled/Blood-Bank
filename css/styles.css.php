@@ -486,4 +486,7 @@ hr {
   text-align: center;
   padding-bottom: 50px;
 }
+.contact-me p{
+  margin-bottom:30px;
+}
 </style>
